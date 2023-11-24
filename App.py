@@ -27,7 +27,7 @@ container = st.container()
 callback_manager = CallbackManager([StreamlitCallbackHandler(container)])
 
 llm = LlamaCpp(
-    model_path="./models/output.bin",
+    model_path="https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/blob/main/llama-2-7b-chat.Q5_0.gguf",
     temperature=0,
     max_tokens=8000,
     top_p=1,
