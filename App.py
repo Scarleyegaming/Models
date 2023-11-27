@@ -35,7 +35,7 @@ st.markdown("""
 container = st.container()
 callback_manager = CallbackManager([StreamlitCallbackHandler(container)])
 
-model="TheBloke/Llama-2-7B-Chat-GGUF"
+model="meta-llama/Llama-2-7b-chat-hf"
 tokenizer=AutoTokenizer.from_pretrained(model)
 pipeline=transformers.pipeline(
     "text-generation",
